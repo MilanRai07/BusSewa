@@ -13,6 +13,7 @@ import SignupForm from './components/form/userForms/SignupForm';
 import ForgetPassword from './components/form/userForms/ForgetPassword';
 import Verification from './components/form/userForms/Verification';
 import ResetPassword from './components/form/userForms/ResetPassword';
+import MaitriBookingIndex from './pages/Home/maitriBooking/MaitriBookingIndex';
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="forget-password" element={<ForgetPassword />} />
           <Route path="verification" element={<Verification />} />
           <Route path="reset-password" element={<ResetPassword />} />
+          <Route path="maitri-booking" element={<MaitriBookingIndex/>}/>
         </Route>
       </Routes>
     </Router>
