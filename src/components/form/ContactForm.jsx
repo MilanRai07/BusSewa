@@ -19,7 +19,10 @@ const ContactForm = () => {
 
     const handleSubmit = async (values, { setSubmitting, resetForm }) => {
         setSubmitting(true);
-        console.log(values)
+        console.log(values);
+        toast.success('Your message has been sent successfully')
+        setSubmitting(false);
+        resetForm();
         // try {
         //     await ContactUs(values).unwrap();
         //     toast.success('Your message has been sent successfully')

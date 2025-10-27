@@ -16,11 +16,11 @@ export const NavbarItem = [
         path: '/bookings'
     },
 
-    {
-        icon: <Notification />,
-        name: 'Notifications',
-        path: '/notifications'
-    },
+    // {
+    //     icon: <Notification />,
+    //     name: 'Notifications',
+    //     path: '/notifications'
+    // },
     // {
     //     icon: '',
     //     name: 'Our Team',

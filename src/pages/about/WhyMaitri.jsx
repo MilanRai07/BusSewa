@@ -4,11 +4,11 @@ const WhyMaitri = () => {
     return (
         <section>
             <h1 className='font-bold text-[20px] max-md:text-[18px] max-sm:text-base tracking-wide mb-8 max-[800px]:mb-7'>
-                Why Maitri?
+                Why Supa Bus (Maitri Bus Sewa)?
             </h1>
             <div className='text-sm leading-[24px]'>
                 <p >
-                    At Maitri Bus, we believe every journey should be safe, comfortable, and stress-free.
+                    At Supa Bus (Maitri Bus Sewa), we believe every journey should be safe, comfortable, and stress-free.
                     We’re more than just a ticket booking service —
                     we’re your travel companion, connecting cities and people with trust and convenience.
                     Our platform is powered by modern technology, ensuring real-time availability, transparent pricing,

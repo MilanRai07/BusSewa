@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from "framer-motion";
 import { NavbarItem } from '../../localData/NavbarItem';
 import HamDrop from './HamDrop';
@@ -10,7 +10,24 @@ const NavbarIndex = () => {
     const [active, setActive] = useState('/');
     const [showHam, setShowHam] = useState(false);
 
-    console.log(NavbarItem)
+    const location = useLocation();
+
+    useEffect(() => {
+        let path = location.pathname;
+        if (path == '/') {
+            setActive('/')
+        } else if (path == '/offers') {
+            setActive('Offers')
+        } else if (path == '/bookings') {
+            setActive('Bookings')
+        } else if (path == '/login') {
+            setActive('Login/SignUp')
+        } else {
+            setActive('')
+        }
+    }, [location.pathname])
+
+    console.log(location.pathname,active)
 
 
     return (
@@ -32,7 +49,7 @@ const NavbarIndex = () => {
                             const { name, path, icon } = items;
                             return (
                                 <li key={index} className={`font-medium relative text-[15px] max-[1261px]:text-[15px] max-[868px]:text-[13px]`}
-                                    onClick={() => setActive(name)}
+
                                 >
 
                                     <NavLink to={path} className='flex items-center gap-2'>

@@ -12,9 +12,13 @@ export const FooterLinks = [
         name: 'Offers',
         path: '/offers'
     },
-     {
-        name: 'Notifications',
-        path: '/notifications'
+    //  {
+    //     name: 'Notifications',
+    //     path: '/notifications'
+    // },
+    {
+        name: 'Privacy & Policy',
+        path: '/privacy-policy'
     },
     {
         name: 'Contact Us',
